@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawâa M'chaâbat | Développeuse Full Stack</title>
+    <meta name="description" content="Portfolio professionnel de Rawâa M'chaâbat, développeuse web full stack passionnée par la création d'expériences digitales innovantes.">
+    
+    <!-- Meta tags SEO -->
+    <meta property="og:title" content="Rawâa M'chaâbat | Développeuse Full Stack">
+    <meta property="og:description" content="Portfolio professionnel de Rawâa M'chaâbat, développeuse web full stack">
+    <meta property="og:image" content="https://example.com/social-preview.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="index.css">
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon_logocv.ico" type="image/x-icon">
+    
+
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Barre de progression -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="logocv.png" alt="Logo Rawâa M'chaâbat" loading="lazy">
+            </a>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+          <ul class="nav-links">
+    <li><a href="#home" class="active" id="nav-home">Accueil</a></li>
+    <li><a href="#about" id="nav-about">À propos</a></li>
+    <li><a href="#education" id="nav-education">Éducation</a></li>
+    <li><a href="#skills" id="nav-skills">Compétences</a></li>
+    <li><a href="#certifications" id="nav-certifications">Certifications</a></li>
+    <li><a href="#work" id="nav-work">Projets</a></li>
+    <li><a href="#contact" id="nav-contact">Contact</a></li>
+    <li class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </li>
+</ul>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section - Version améliorée -->
+<section id="home" class="hero" style="position: relative; overflow: hidden;">
+    <!-- Animation de fond -->
+    <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+        <div style="position: absolute; top: -50%; right: -50%; width: 100%; height: 200%; background: radial-gradient(circle, rgba(37,99,235,0.1) 0%, rgba(255,255,255,0) 70%);"></div>
+        <div style="position: absolute; bottom: -30%; left: -30%; width: 80%; height: 80%; background: radial-gradient(circle, rgba(16,185,129,0.1) 0%, rgba(255,255,255,0) 70%);"></div>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 1;">
+        <div class="hero-content" style="position: relative;">
+            <!-- Badge "Disponible pour missions" -->
+            <div style="background: rgba(16,185,129,0.1); color: var(--secondary); padding: 8px 16px; border-radius: 20px; display: inline-flex; align-items: center; margin-bottom: 20px; font-size: 0.9rem; font-weight: 500;">
+                <div style="width: 8px; height: 8px; background: var(--secondary); border-radius: 50%; margin-right: 8px; animation: pulse 1.5s infinite;"></div>
+                Disponible pour missions freelance
+            </div>
+            
+            <h4 class="subtitle" style="color: var(--primary); font-weight: 600; letter-spacing: 1px;">Bonjour, je suis</h4>
+            
+            <!-- Nom avec effet gradient -->
+            <h1 class="title" style="background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 10px 0; font-size: clamp(2.5rem, 8vw, 4rem); line-height: 1.1;">
+                Rawâa M'chaâbat
+            </h1>
+            
+            <h2 class="job-title" style="font-size: clamp(1.2rem, 4vw, 1.8rem); margin-bottom: 25px; color: var(--dark-light);">
+                <span id="typing-text" style="border-right: 2px solid var(--primary); animation: blink 0.7s infinite;"></span>
+            </h2>
+            
+            <p class="description" style="max-width: 600px; font-size: 1.1rem; line-height: 1.7; margin-bottom: 30px;">
+               Étudiante en Developpement digital à l'OFPPT, passionnée par le développement web front-end. Je combine mes apprentissages académiques avec une veille active sur les technologies modernes pour créer des interfaces utilisateur performantes et esthétiques
+            </p>
+            
+            <div class="cta-buttons" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="#work" class="btn primary" style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-eye"></i> Voir mes projets
+                </a>
+                <a href="#contact" class="btn secondary" style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-paper-plane"></i> Me contacter
+                </a>
+                <a href="rawaa_cv.pdf" class="btn secondary" download style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-download"></i> Télécharger CV
+                </a>
+            </div>
+            
+            <div class="social-links" style="margin-top: 40px;">
+                <p style="color: var(--gray); margin-bottom: 15px; font-size: 0.9rem;">SUIVEZ-MOI</p>
+                <div style="display: flex; gap: 15px;">
+                    <a href="https://github.com/rawaa-mch" target="_blank" rel="noopener noreferrer" aria-label="GitHub" 
+                       style="width: 45px; height: 45px; border-radius: 50%; background: var(--gray-light); color: var(--dark); display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/raw%C3%A2a-mch-4705a2371/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" 
+                       style="width: 45px; height: 45px; border-radius: 50%; background: var(--gray-light); color: var(--dark); display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rawaa_mch/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" 
+                       style="width: 45px; height: 45px; border-radius: 50%; background: var(--gray-light); color: var(--dark); display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-image" style="position: relative;">
+            <div class="image-wrapper" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.15); border: none;">
+                <img src="image.png" alt="Rawâa M'chaâbat" loading="lazy" style="transition: transform 0.5s ease;">
+                
+                <!-- Badge de compétences flottant -->
+                <div style="position: absolute; bottom: 30px; left: -20px; background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); display: flex; align-items: center; z-index: 2; animation: float 3s ease-in-out infinite;">
+                    <div style="width: 40px; height: 40px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; color: white;">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div>
+                        <div style="font-weight: 600; color: var(--dark);">Full Stack</div>
+                        <div style="font-size: 0.8rem; color: var(--gray);">Développeuse</div>
+                    </div>
+                </div>
+                
+                <!-- Autre badge flottant -->
+                <div style="position: absolute; top: 30px; right: -20px; background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); display: flex; align-items: center; z-index: 2; animation: float 3s ease-in-out infinite 1s;">
+                    <div style="width: 40px; height: 40px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; color: white;">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <div style="font-weight: 600; color: var(--dark);">5+</div>
+                        <div style="font-size: 0.8rem; color: var(--gray);">Certifications</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Élément décoratif -->
+            <div style="position: absolute; top: -30px; right: -30px; width: 200px; height: 200px; border-radius: 50%; background: linear-gradient(45deg, var(--primary-light), transparent); z-index: -1; opacity: 0.3;"></div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(248,250,252,0.9) 0%, rgba(248,250,252,0.6) 100%);
+        }
+        
+        .image-wrapper:hover img {
+            transform: scale(1.05);
+        }
+        
+        .social-links a:hover {
+            background: var(--primary) !important;
+            color: white !important;
+            transform: translateY(-3px);
+        }
+    </style>
+    
+    <script>
+        // Animation de texte typing
+        const typingText = document.getElementById('typing-text');
+        const professions = ["Développeuse Full Stack", "Passionnée de Tech"];
+        let currentProfession = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        
+        function typeWriter() {
+            const currentText = professions[currentProfession];
+            
+            if (isDeleting) {
+                typingText.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingText.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            if (!isDeleting && charIndex === currentText.length) {
+                isDeleting = true;
+                setTimeout(typeWriter, 1500);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                currentProfession = (currentProfession + 1) % professions.length;
+                setTimeout(typeWriter, 500);
+            } else {
+                setTimeout(typeWriter, isDeleting ? 50 : 100);
+            }
+        }
+        
+        // Démarrer l'animation après le chargement
+        window.addEventListener('load', () => {
+            setTimeout(typeWriter, 1000);
+        });
+    </script>
+</section>
+
+    <!-- About Section -->
+    <!-- About Section - Version modifiée avec blocs de services -->
+<!-- About Section - Design amélioré -->
+<section id="about" class="about" style="background-color: var(--light); position: relative; overflow: hidden;">
+    <!-- Effet décoratif de fond -->
+    <div style="position: absolute; top: -50%; right: -50%; width: 100%; height: 200%; background: radial-gradient(circle, rgba(37,99,235,0.05) 0%, rgba(255,255,255,0) 70%); z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 1;">
+        <div class="section-header">
+            <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 1rem;">À propos de moi</h2>
+            <p class="section-subtitle" style="color: var(--primary); font-weight: 500; letter-spacing: 2px; text-transform: uppercase;">Qui suis-je ?</p>
+        </div>
+        
+        <div class="about-content" style="display: flex; flex-wrap: wrap; gap: 3rem; align-items: center;">
+            <!-- Image avec effet -->
+            <div class="about-image" style="flex: 1; min-width: 300px; position: relative;">
+                <div style="width: 100%; max-width: 400px; margin: 0 auto; position: relative;">
+                    <img src="3a61d803b23fc77c5df360a8c0a2fe8a.jpg" alt="Rawâa M'chaâbat" 
+                         style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2); border: 5px solid white;">
+                    
+                    <!-- Badge d'expérience flottant -->
+                    <div style="position: absolute; bottom: -20px; left: -20px; background: white; padding: 15px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: flex; align-items: center; z-index: 2; animation: float 3s ease-in-out infinite;">
+                        <div style="width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; color: white; font-size: 1.5rem;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <div style="font-weight: 700; color: var(--dark);">Étudiante en</div>
+                            <div style="font-size: 0.9rem; color: var(--gray);">Développement Digital</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contenu texte -->
+            <div class="about-text" style="flex: 1; min-width: 300px;">
+                <h3 style="font-size: 1.75rem; margin-bottom: 1.5rem; color: var(--primary); position: relative; display: inline-block;">
+                    Passionnée par le développement web et l'innovation
+                    <span style="position: absolute; bottom: -8px; left: 0; width: 50%; height: 3px; background: linear-gradient(90deg, var(--primary), var(--secondary));"></span>
+                </h3>
+                
+                <div style="background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 2rem;">
+                    <p style="margin-bottom: 1rem; line-height: 1.7; color: var(--dark-light);">
+                       Je m'appelle Rawâa M'chaâbat, j'ai 19 ans et je suis actuellement étudiante en 1ère année à l'OFPPT, où je me forme aux métiers du développement digital. Titulaire d'un baccalauréat en Sciences PC (option française), je me passionne pour la création de sites web et l'univers du numérique.
+                    </p>
+                    <p style="line-height: 1.7; color: var(--dark-light);">
+                       Autodidacte et curieuse, je consacre mon temps libre à approfondir mes connaissances en programmation et à réaliser des projets personnels. Mon objectif est de devenir une développeuse web polyvalente, capable de créer des solutions à la fois esthétiques et fonctionnelles.
+                    </p>
+                </div>
+                
+                <!-- Statistiques -->
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+                    <div style="flex: 1; min-width: 120px; background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center;">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">5+</div>
+                        <div style="font-size: 0.9rem; color: var(--gray);">Projets réalisés</div>
+                    </div>
+                    <div style="flex: 1; min-width: 120px; background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center;">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">5</div>
+                        <div style="font-size: 0.9rem; color: var(--gray);">Certifications</div>
+                    </div>
+                </div>
+                
+                <!-- Boutons d'action -->
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="rawaa_cv.pdf" class="btn primary" download style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-download"></i> Télécharger CV
+                    </a>
+                    <a href="#contact" class="btn secondary" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-paper-plane"></i> Me contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+    
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .about-image img {
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.03);
+        }
+        
+        .about-text p {
+            position: relative;
+        }
+        
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+    </style>
+</section>
+    <!-- Remplacer la section éducation existante -->
+<section id="education" class="education">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Mon Parcours Académique</h2>
+            <p class="section-subtitle">Évolution de mes compétences à travers les formations</p>
+        </div>
+        
+        <div class="timeline">
+            <!-- OFPPT -->
+            <div class="timeline-item">
+                <div class="timeline-date">2024 - Présent</div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Technicien Spécialisé en Développement Digital</h3>
+                        <span class="timeline-location"><i class="fas fa-map-marker-alt"></i>l’Institut Spécialisé de Technologie Appliquée NTIC Sidi Maarouf</span>
+                    </div>
+                    <p class="timeline-description">Formation intensive en développement web full stack avec projets pratiques</p>
+                    <div class="timeline-achievements">
+                        <p><i class="fas fa-check-circle"></i> Réalisation de 5 projets complets</p>
+                        <p><i class="fas fa-check-circle"></i> Apprentissage des méthodologies agiles</p>
+                    </div>
+                    <div class="timeline-skills">
+                        <h4>Technologies maîtrisées :</h4>
+                        <ul class="skills-list">
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP </li>
+                            <li>MySQL</li>
+                            <li>Bootstrap</li>
+                            <li>Python</li>
+                            <li>POO</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lycée -->
+            <div class="timeline-item">
+                <div class="timeline-date">2021 - 2024</div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Baccalauréat Sciences Physiques</h3>
+                        <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Lycée Abdelkrim Al Khattabi</span>
+                    </div>
+                    <p class="timeline-description">Option française avec mention bien</p>
+                    <div class="timeline-achievements">
+                        <p><i class="fas fa-check-circle"></i> Développement de compétences analytiques</p>
+                        <p><i class="fas fa-check-circle"></i> Initiation à l'algorithmique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes compétences</h2>
+                <p class="section-subtitle">Ce que je maîtrise</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-scroll">
+                    <!-- Frontend Skills -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>
+                                <span class="skill-name">HTML <span>95%</span></span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-width="95%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">CSS <span>90%</span></span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-width="90%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">JavaScript <span>80%</span></span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-width="80%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Backend Skills -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>
+                                <span class="skill-name">PHP <span>75%</span></span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-width="75%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">Python <span>70%</span></span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-width="70%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Autres compétences -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Autres</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>
+                                <span class="skill-name">MySQL <span>80%</span></span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-width="80%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">XAMPP <span>80%</span></span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-width="80%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Bureautique -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i class="fas fa-file-alt"></i>
+                            <h3>Bureautique</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>
+                                <span class="skill-name">WORD <span>90%</span></span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-width="90%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">EXCEL <span>90%</span></span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-width="90%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="skill-name">PowerPoint <span>90%</span></span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-width="90%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Certifications Section -->
+ <!-- Certifications Section -->
+<section id="certifications" class="certifications">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Mes Certifications</h2>
+            <p class="section-subtitle">Mes acquis et formations certifiées</p>
+        </div>
+        
+        <div class="certifications-grid">
+            <!-- Certification JavaScript -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript Essentials</h3>
+                </div>
+                <div class="certification-body">
+                    <p>Certification Cisco Networking Academy validant les compétences fondamentales en JavaScript.</p>
+                    <div class="certification-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Juin 2025</span>
+                        <span><i class="fas fa-award"></i> Cisco</span>
+                        <a href="certificat-javascript1.pdf" class="btn small" target="_blank">Voir le certificat</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certification Python 1 -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <i class="fab fa-python"></i>
+                    <h3>Python Essentials 1</h3>
+                </div>
+                <div class="certification-body">
+                    <p>Première partie de la certification Python couvrant les bases de la programmation Python.</p>
+                    <div class="certification-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Mai 2025</span>
+                        <span><i class="fas fa-award"></i> Cisco</span>
+                        <a href="certificat-python1.pdf" class="btn small" target="_blank">Voir le certificat</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certification Python 2 -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <i class="fab fa-python"></i>
+                    <h3>Python Essentials 2</h3>
+                </div>
+                <div class="certification-body">
+                    <p>Deuxième partie de la certification Python abordant des concepts plus avancés.</p>
+                    <div class="certification-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Mai 2025</span>
+                        <span><i class="fas fa-award"></i> Cisco</span>
+                        <a href="certificat-python2.pdf" class="btn small" target="_blank">Voir le certificat</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certification Cybersécurité -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Introduction à la Cybersécurité</h3>
+                </div>
+                <div class="certification-body">
+                    <p>Certification couvrant les fondamentaux de la sécurité informatique et des bonnes pratiques.</p>
+                    <div class="certification-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Mai 2025</span>
+                        <span><i class="fas fa-award"></i> Cisco</span>
+                        <a href="certificat-cybersecurite.pdf" class="btn small" target="_blank">Voir le certificat</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certification IA -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <i class="fas fa-robot"></i>
+                    <h3>Introduction à l'IA Moderne</h3>
+                </div>
+                <div class="certification-body">
+                    <p>Certification sur les concepts fondamentaux de l'Intelligence Artificielle et ses applications.</p>
+                    <div class="certification-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Mai 2025</span>
+                        <span><i class="fas fa-award"></i> Cisco</span>
+                        <a href="certificat-ai.pdf" class="btn small" target="_blank">Voir le certificat</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certification Sécurité des terminaux -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Sécurité des Terminaux</h3>
+                </div>
+                <div class="certification-body">
+                    <p>Certification spécialisée dans la sécurisation des appareils et terminaux connectés.</p>
+                    <div class="certification-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Juin 2025</span>
+                        <span><i class="fas fa-award"></i> Cisco</span>
+                        <a href="certificat-terminaux.pdf" class="btn small" target="_blank">Voir le certificat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Work Section -->
+<section id="work" class="work">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Mes projets</h2>
+            <p class="section-subtitle">Un aperçu de mon travail</p>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Projet 1 - Modifié pour correspondre au style des projets 4-6 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="h.jpg" alt="Projet Wedding Dress" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <h3>Wedding Dress</h3>
+                    <p>Plateforme e-commerce pour robes de mariée avec fonctionnalités avancées.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://github.com/rawaa-mch/wedding-dress" class="btn small" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://wedding-dress-seven.vercel.app/" class="btn small secondary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-eye"></i> Voir le projet
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 2 - Nike Store - Modifié -->
+            <div class="project-card">
+                <div class="project-image">
+                    <video autoplay loop muted playsinline>
+                        <source src="Enregistrement 2025-06-28 183914.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="project-info">
+                    <h3>Nike Store</h3>
+                    <p>Boutique en ligne pour produits Nike avec système de paiement sécurisé.</p>
+                    <div class="project-tags">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://github.com/rawaa-mch/nike-store" class="btn small" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="Enregistrement 2025-06-28 183914.mp4" class="btn small secondary">
+                            <i class="fas fa-play"></i> Voir la démo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 3 - Portfolio - Modifié -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Capture d'écran 2025-06-21 192448.png" alt="Portfolio" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio</h3>
+                    <p>Mon portfolio personnel mettant en avant mes compétences et projets.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://github.com/rawaa-mch/portfolio" class="btn small" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="r1.html" class="btn small secondary">
+                            <i class="fas fa-eye"></i> Voir le projet
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 4 - Reconnaissance Faciale -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="WhatsApp Image 2025-07-10 à 21.46.47_044a2630.jpg" alt="Reconnaissance Faciale" loading="lazy" onerror="this.src='default-project-image.jpg'">
+                </div>
+                <div class="project-info">
+                    <h3>Reconnaissance Faciale</h3>
+                    <p>Application de reconnaissance faciale utilisant Python et OpenCV pour détecter et identifier des visages.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://github.com/rawaa-mch/reconnaissance_faciale" class="btn small" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://github.com/rawaa-mch/reconnaissance_faciale/blob/main/README.md" class="btn small secondary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-book"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 5 - Jeu Jumpy -->
+            <div class="project-card">
+                <div class="project-image">
+                   <img src="jeu.jpg" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>Jumpy Game</h3>
+                    <p>Jeu de plateforme 2D développé en JavaScript pur où le joueur doit sauter entre les plateformes pour marquer des points.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Pygame</span>
+                        <span>Game Development</span>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://github.com/rawaa-mch/jumpy-game" class="btn small" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="jeu.mp4" class="btn small secondary">
+                            <i class="fas fa-play"></i> Voir la démo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 6 - Calculatrice Python -->
+            <div class="project-card">
+                <div class="project-image">
+                   <img src="c.jpg" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>Calculatrice Python</h3>
+                    <p>Calculatrice simple développée avec Tkinter en Python avec interface colorée.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>GUI</span>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://github.com/rawaa-mch/portfolio/blob/main/calculatrice.py" class="btn small" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="calcul.mp4" class="btn small secondary">
+                            <i class="fas fa-play"></i> Voir la démo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Projet 7 - Antivirus Python -->
+<div class="project-card">
+    <div class="project-image">
+        <img src="an.png" alt="Antivirus Python" loading="lazy" onerror="this.src='default-project-image.jpg'">
+    </div>
+    <div class="project-info">
+        <h3>Antivirus Python</h3>
+        <p>Application antivirus qui scanne et supprime automatiquement les fichiers malveillants, doublons et fichiers/dossiers vides.</p>
+        <div class="project-tags">
+            <span>Python</span>
+            <span>Tkinter</span>
+            <span>Sécurité</span>
+            <span>SHA-256</span>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <a href="https://github.com/rawaa-mch/python-antivirus" class="btn small" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> Code
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Projet 8 - Filtres Snapchat avec OpenCV -->
+<div class="project-card">
+    <div class="project-image">
+      <img src="f.png" alt="">
+    </div>
+    <div class="project-info">
+        <h3>Filtres Snapchat avec OpenCV</h3>
+        <p>Application de filtres faciaux en temps réel inspirée de Snapchat, utilisant la détection faciale et le traitement d'image.</p>
+        <div class="project-tags">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Computer Vision</span>
+            <span>Détection faciale</span>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <a href="https://github.com/rawaa-mch/snapchat-filters" class="btn small" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> Code
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+   <!-- Contact Section -->
+<!-- Remplacer la section contact existante par ce code -->
+<section id="contact" class="contact" style="background: linear-gradient(135deg, #2563eb, #10b981); padding: 5rem 0;">
+    <div class="container">
+        <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+            <h2 class="section-title" style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">Restons en contact</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9); font-size: 1.2rem;">Disponible pour des opportunités et collaborations</p>
+        </div>
+
+        <div class="contact-card" style="background: white; 
+                                    max-width: 600px; 
+                                    margin: 0 auto;
+                                    padding: 3rem;
+                                    border-radius: 16px;
+                                    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                                    text-align: center;
+                                    position: relative;
+                                    overflow: hidden;">
+            
+            <!-- Effet décoratif gradient -->
+            <div style="position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 5px;
+                    background: linear-gradient(90deg, #2563eb, #10b981);"></div>
+
+            <div class="contact-avatar" style="width: 100px;
+                                            height: 100px;
+                                            border-radius: 50%;
+                                            margin: 0 auto 1.5rem;
+                                            border: 3px solid #2563eb;
+                                            overflow: hidden;">
+                <img src="WhatsApp Image 2025-06-24 à 20.07.06_a85a4f68.jpg" 
+                    alt="Rawâa M'chaâbat"
+                    style="width: 100%;
+                            height: 100%;
+                            object-fit: cover;">
+            </div>
+
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #1e293b;">Rawâa M'chaâbat</h3>
+            
+            <div class="contact-methods" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+                <a href="mailto:rawaamchaabat@gmail.com" 
+                style="display: inline-flex;
+                        align-items: center;
+                        color: #2563eb;
+                        text-decoration: none;
+                        padding: 0.8rem 1.5rem;
+                        border-radius: 50px;
+                        background: rgba(37, 99, 235, 0.1);
+                        transition: all 0.3s ease;">
+                    <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>
+                    Envoyer un email
+                </a>
+                
+                <a href="tel:+212652239385" 
+                style="display: inline-flex;
+                        align-items: center;
+                        color: #10b981;
+                        text-decoration: none;
+                        padding: 0.8rem 1.5rem;
+                        border-radius: 50px;
+                        background: rgba(16, 185, 129, 0.1);
+                        transition: all 0.3s ease;">
+                    <i class="fas fa-phone" style="margin-right: 0.5rem;"></i>
+                    Appeler
+                </a>
+            </div>
+
+            <div class="social-presence" style="margin-top: 2rem;">
+                <p style="color: #64748b; margin-bottom: 1rem;">Retrouvez-moi sur</p>
+                <div style="display: flex; justify-content: center; gap: 1rem;">
+                    <a href="https://www.linkedin.com/in/raw%C3%A2a-mch-4705a2371/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style="display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            background: linear-gradient(45deg, #2563eb, #3b82f6);
+                            color: white;
+                            font-size: 1.25rem;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/rawaa-mch" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style="display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            background: linear-gradient(45deg, #333, #555);
+                            color: white;
+                            font-size: 1.25rem;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rawaa_mch/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style="display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            background: linear-gradient(45deg, #E1306C, #F77737);
+                            color: white;
+                            font-size: 1.25rem;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; color: #94a3b8; font-size: 0.9rem;">
+                <p><i class="fas fa-map-marker-alt" style="color: #2563eb; margin-right: 0.5rem;"></i> Casablanca, Maroc</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+   <footer class="footer" style="background: linear-gradient(135deg, #1e293b, #0f172a); color: white; padding: 4rem 0 2rem;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+        <div class="footer-content" style="display: flex; flex-direction: column; align-items: center; gap: 2.5rem;">
+            
+            <!-- Logo et description -->
+            <div class="footer-brand" style="text-align: center;">
+                <div class="footer-logo" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1rem;">
+                    <img src="logocv.png" alt="Logo Rawâa M'chaâbat" style="height: 50px; filter: brightness(0) invert(1);">
+                    <span style="font-size: 1.8rem; font-weight: 700; background: linear-gradient(90deg, #3b82f6, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Rawâa M'chaâbat</span>
+                </div>
+                <p style="max-width: 500px; margin: 0 auto; color: #94a3b8; line-height: 1.6;">Développeuse Full Stack passionnée par la création d'expériences web modernes et performantes.</p>
+            </div>
+            
+            <!-- Grille de liens -->
+            <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); width: 100%; gap: 2rem;">
+                <!-- Liens rapides -->
+                <div class="footer-links">
+                    <h4 style="font-size: 1.2rem; margin-bottom: 1.5rem; position: relative; display: inline-block;">
+                        Navigation
+                        <span style="position: absolute; bottom: -8px; left: 0; width: 40px; height: 3px; background: linear-gradient(90deg, #3b82f6, #10b981);"></span>
+                    </h4>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="#home" style="color: #e2e8f0; transition: all 0.3s; display: inline-block; position: relative; padding-left: 1.2rem;">
+                            <i class="fas fa-chevron-right" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 0.7rem; color: #3b82f6;"></i>
+                            Accueil
+                        </a></li>
+                        <li><a href="#about" style="color: #e2e8f0; transition: all 0.3s; display: inline-block; position: relative; padding-left: 1.2rem;">
+                            <i class="fas fa-chevron-right" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 0.7rem; color: #3b82f6;"></i>
+                            À propos
+                        </a></li>
+                        <li><a href="#skills" style="color: #e2e8f0; transition: all 0.3s; display: inline-block; position: relative; padding-left: 1.2rem;">
+                            <i class="fas fa-chevron-right" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 0.7rem; color: #3b82f6;"></i>
+                            Compétences
+                        </a></li>
+                        <li><a href="#work" style="color: #e2e8f0; transition: all 0.3s; display: inline-block; position: relative; padding-left: 1.2rem;">
+                            <i class="fas fa-chevron-right" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 0.7rem; color: #3b82f6;"></i>
+                            Projets
+                        </a></li>
+                        <li><a href="#contact" style="color: #e2e8f0; transition: all 0.3s; display: inline-block; position: relative; padding-left: 1.2rem;">
+                            <i class="fas fa-chevron-right" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 0.7rem; color: #3b82f6;"></i>
+                            Contact
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- Coordonnées -->
+                <div class="footer-contact">
+                    <h4 style="font-size: 1.2rem; margin-bottom: 1.5rem; position: relative; display: inline-block;">
+                        Contact
+                        <span style="position: absolute; bottom: -8px; left: 0; width: 40px; height: 3px; background: linear-gradient(90deg, #3b82f6, #10b981);"></span>
+                    </h4>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; color: #e2e8f0;">
+                        <li style="display: flex; align-items: center; gap: 0.8rem;">
+                            <i class="fas fa-envelope" style="color: #3b82f6;"></i>
+                            <a href="mailto:rawaamchaabat@gmail.com" style="color: #e2e8f0; transition: all 0.3s;">rawaamchaabat@gmail.com</a>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.8rem;">
+                            <i class="fas fa-phone" style="color: #10b981;"></i>
+                            <a href="tel:+212652239385" style="color: #e2e8f0; transition: all 0.3s;">+212 6 52 23 93 85</a>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.8rem;">
+                            <i class="fas fa-map-marker-alt" style="color: #f97316;"></i>
+                            <span>Casablanca, Maroc</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-newsletter">
+                    <h4 style="font-size: 1.2rem; margin-bottom: 1.5rem; position: relative; display: inline-block;">
+                        Newsletter
+                        <span style="position: absolute; bottom: -8px; left: 0; width: 40px; height: 3px; background: linear-gradient(90deg, #3b82f6, #10b981);"></span>
+                    </h4>
+                    <p style="color: #94a3b8; margin-bottom: 1.5rem;">Abonnez-vous pour recevoir mes dernières actualités.</p>
+                    <form style="display: flex; gap: 0.5rem;">
+                        <input type="email" placeholder="Votre email" style="flex: 1; padding: 0.8rem; border: none; border-radius: 8px; background: rgba(255,255,255,0.1); color: white;">
+                        <button type="submit" style="background: linear-gradient(90deg, #3b82f6, #10b981); color: white; border: none; border-radius: 8px; padding: 0 1.5rem; cursor: pointer; transition: all 0.3s;">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Réseaux sociaux et copyright -->
+            <div class="footer-bottom" style="width: 100%; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+                <div class="footer-social" style="display: flex; gap: 1.5rem;">
+                    <a href="https://github.com/rawaa-mch" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style="display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; border-radius: 50%; background: rgba(255,255,255,0.05); color: white; font-size: 1.2rem; transition: all 0.3s;">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/raw%C3%A2a-mch-4705a2371/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; border-radius: 50%; background: rgba(255,255,255,0.05); color: white; font-size: 1.2rem; transition: all 0.3s;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rawaa_mch/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; border-radius: 50%; background: rgba(255,255,255,0.05); color: white; font-size: 1.2rem; transition: all 0.3s;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                
+                <div class="copyright" style="text-align: center; color: #94a3b8; font-size: 0.9rem;">
+                    <p>&copy; 2025 Rawâa M'chaâbat. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Assistant IA -->
+    <div class="ai-assistant">
+        <button id="assistant-btn" class="assistant-btn">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div class="assistant-chat">
+            <div class="chat-header">
+                <h4><i class="fas fa-robot"></i> Assistant IA</h4>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="assistant-message">
+                    Bonjour ! Je suis l'assistant IA de Rawâa. Posez-moi vos questions sur son portfolio.
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Posez votre question..." autocomplete="off">
+                <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+<!-- Scroll to Top Button -->
+<button class="scroll-top" id="scrollTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Textes multilingues
+    const translations = {
+        fr: {
+            home: "Accueil",
+            about: "À propos",
+            education: "Éducation",
+            skills: "Compétences",
+            certifications: "Certifications",
+            work: "Projets",
+            contact: "Contact",
+            heroTitle: "Rawâa M'chaâbat",
+            heroSubtitle: "Développeuse Full Stack",
+            // Ajoutez toutes les autres traductions nécessaires...
+        },
+        en: {
+            home: "Home",
+            about: "About",
+            education: "Education",
+            skills: "Skills",
+            certifications: "Certifications",
+            work: "Projects",
+            contact: "Contact",
+            heroTitle: "Rawâa M'chaâbat",
+            heroSubtitle: "Full Stack Developer",
+            // Ajoutez toutes les autres traductions nécessaires...
+        }
+    };
+
+    // Éléments à traduire
+    const elementsToTranslate = {
+        'nav-home': 'home',
+        'nav-about': 'about',
+        'nav-education': 'education',
+        'nav-skills': 'skills',
+        'nav-certifications': 'certifications',
+        'nav-work': 'work',
+        'nav-contact': 'contact',
+        'hero-title': 'heroTitle',
+        'hero-subtitle': 'heroSubtitle'
+        // Ajoutez les autres éléments avec leurs IDs...
+    };
+
+    // Fonction de traduction
+    function updateLanguage(lang) {
+        // Mettre à jour les boutons
+        document.querySelectorAll('.language-btn').forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.dataset.lang === lang) {
+                btn.classList.add('active');
+            }
+        });
+
+        // Mettre à jour les textes
+        Object.keys(elementsToTranslate).forEach(id => {
+            const element = document.getElementById(id);
+            if (element) {
+                element.textContent = translations[lang][elementsToTranslate[id]];
+            }
+        });
+
+        // Sauvegarder la préférence
+        localStorage.setItem('preferredLanguage', lang);
+    }
+
+    // Gestion des clics sur les boutons de langue
+    document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lang = this.dataset.lang;
+            updateLanguage(lang);
+        });
+    });
+
+    // Initialiser avec la langue sauvegardée ou le français par défaut
+    const preferredLanguage = localStorage.getItem('preferredLanguage') || 'fr';
+    updateLanguage(preferredLanguage);
+            // Menu mobile
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            menuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                
+                // Empêcher le défilement lorsque le menu est ouvert
+                if (navLinks.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Fermer le menu quand on clique sur un lien
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+            
+            // Changement de thème
+            const themeToggle = document.querySelector('.theme-toggle');
+            const themeIcon = themeToggle.querySelector('i');
+            
+            // Vérifier la préférence de thème au chargement
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.body.setAttribute('data-theme', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+            
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = document.body.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                document.body.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                
+                if (newTheme === 'dark') {
+                    themeIcon.classList.replace('fa-moon', 'fa-sun');
+                } else {
+                    themeIcon.classList.replace('fa-sun', 'fa-moon');
+                }
+            });
+            
+            // Animation de la navbar au scroll
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                
+                // Mise à jour des liens actifs
+                updateActiveNavLink();
+                
+                // Mise à jour de la barre de progression
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById("progressBar").style.width = scrolled + "%";
+            });
+            
+            // Mettre à jour le lien actif dans la navigation
+            function updateActiveNavLink() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.nav-links a');
+                
+                let currentSection = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            // Animation des barres de compétences
+            function animateSkillBars() {
+                const skillBars = document.querySelectorAll('.skill-level');
+                
+                skillBars.forEach(bar => {
+                    const width = bar.getAttribute('data-width');
+                    let currentWidth = 0;
+                    const animationDuration = 1500; // 1.5 secondes
+                    const increment = (parseInt(width) / (animationDuration / 16)); // 60fps
+                    
+                    const animate = () => {
+                        currentWidth += increment;
+                        if (currentWidth < parseInt(width)) {
+                            bar.style.width = currentWidth + '%';
+                            requestAnimationFrame(animate);
+                        } else {
+                            bar.style.width = width;
+                        }
+                    };
+                    
+                    animate();
+                });
+            }
+            
+            // Observer pour animer les éléments quand ils sont visibles
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (entry.target.id === 'skills') {
+                            animateSkillBars();
+                        }
+                        
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            // Éléments à observer
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+            
+            // Smooth scroll pour les liens
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Animation des vidéos de projets
+            const projectVideos = document.querySelectorAll('.project-image video');
+            
+            projectVideos.forEach(video => {
+                video.addEventListener('mouseenter', () => {
+                    video.play();
+                });
+                
+                video.addEventListener('mouseleave', () => {
+                    video.pause();
+                    video.currentTime = 0;
+                });
+            });
+            
+            // Assistant IA
+            const assistantBtn = document.getElementById('assistant-btn');
+            const assistantChat = document.querySelector('.assistant-chat');
+            const closeChat = document.querySelector('.close-chat');
+            const sendBtn = document.getElementById('send-btn');
+            const userInput = document.getElementById('user-input');
+            const chatMessages = document.getElementById('chat-messages');
+
+            // Base de connaissances pour l'IA
+            const knowledgeBase = {
+                'salut|bonjour|coucou|hello': [
+                    "Bonjour ! Je suis l'assistant IA de Rawâa. Comment puis-je vous aider ?",
+                    "Salut ! Posez-moi vos questions sur le portfolio de Rawâa.",
+                    "Hello ! Je suis là pour répondre à vos questions."
+                ],
+                'compétence|skill|connaissance|expertise': [
+                    "Rawâa possède des compétences en :\n- Front-end : HTML, CSS, JavaScript\n- Back-end : PHP, Python\n- Bases de données : MySQL\nConsultez la section 'Compétences' pour plus de détails.",
+                    "Ses principales compétences incluent le développement web full stack avec une spécialisation front-end."
+                ],
+                'projet|réalisation|portfolio|travail': [
+                    "Projets notables :\n1. Plateforme e-commerce Nike\n2. Site de robes de mariée\n3. Portfolio artistique\nVoir la section 'Projets' pour les détails.",
+                    "Rawâa a travaillé sur plusieurs projets web. Lequel vous intéresse ?"
+                ],
+                'contact|email|téléphone|joindre': [
+                    "Vous pouvez contacter Rawâa par :\n- Email : rawaamchaabat@gmail.com\n- Téléphone : 06 52 23 93 85\n- LinkedIn : https://www.linkedin.com/in/raw%C3%A2a-mch-4705a2371/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                    "Utilisez le formulaire de contact ou ses coordonnées directes."
+                ],
+                'certificat|diplôme|formation|étude': [
+                    "Certifications Cisco :\n- JavaScript Essentials\n- Python\n- Cybersécurité\n- IA\nVoir la section 'Certifications'.",
+                    "Elle a obtenu plusieurs certifications techniques reconnues."
+                ],
+                'expérience|parcours|études|background': [
+                    "Parcours académique :\n- OFPPT : Développement Digital (en cours)\n- Lycée : Bac Sciences PC\nVoir la section 'Parcours'.",
+                    "Elle se forme actuellement au développement digital tout en réalisant des projets personnels."
+                ],
+                'qui es|présente|assistant|bot': [
+                    "Je suis l'assistant IA du portfolio de Rawâa M'chaâbat, développeuse web.",
+                    "Je peux vous renseigner sur ses compétences, projets et comment la contacter."
+                ],
+                'default': [
+                    "Je n'ai pas compris. Pouvez-vous reformuler ?",
+                    "Je suis spécialisé dans les questions sur le portfolio de Rawâa. Posez-moi une question précise !",
+                    "Essayer avec des mots comme 'compétences', 'projets' ou 'contact'."
+                ],
+                'merci|remerciement|thanks|chokran': [
+                    "Je vous en prie ! N'hésitez pas si vous avez d'autres questions.",
+                    "Avec plaisir ! Bonne exploration du portfolio."
+                ],
+                'cool|super|génial|impressionnant': [
+                    "Merci ! Rawâa sera ravie d'avoir votre feedback. Quel aspect vous plaît particulièrement ?",
+                    "Content que ça vous plaise ! N'hésitez pas à explorer les différentes sections."
+                ],
+                'étudiante|apprentissage|formation|école': [
+                    "Je suis actuellement en formation développement digital à l'OFPPT tout en travaillant sur des projets personnels pour perfectionner mes compétences.",
+                    "En tant qu'étudiante, je consacre mon temps entre les cours théoriques et la pratique à travers divers projets web."
+                ],
+                'certificat|diplôme|formation|étude': [
+    "Certifications Cisco :\n- JavaScript Essentials\n- Python (Parts 1 & 2)\n- Cybersécurité\n- IA\n- Sécurité des terminaux\nVoir la section 'Certifications'.",
+    "Elle a obtenu plusieurs certifications techniques reconnues par Cisco Networking Academy."
+]
+            };
+
+            // Activer/désactiver le chat
+            function toggleChat() {
+                assistantChat.classList.toggle('active');
+                if (assistantChat.classList.contains('active')) {
+                    assistantBtn.classList.add('active');
+                } else {
+                    assistantBtn.classList.remove('active');
+                }
+            }
+
+            // Ajouter un message dans le chat
+            function addMessage(text, isUser = false) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add(isUser ? 'user-message' : 'assistant-message');
+                messageDiv.textContent = text;
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            // Analyser la question et trouver la meilleure réponse
+            function findBestResponse(question) {
+                question = question.toLowerCase();
+                
+                for (const [keywords, responses] of Object.entries(knowledgeBase)) {
+                    const keywordArray = keywords.split('|');
+                    if (keywordArray.some(keyword => question.includes(keyword))) {
+                        return responses[Math.floor(Math.random() * responses.length)];
+                    }
+                }
+                
+                // Si aucune correspondance, retourner une réponse par défaut
+                return knowledgeBase.default[Math.floor(Math.random() * knowledgeBase.default.length)];
+            }
+
+            // Gérer l'envoi de message
+            function handleUserInput() {
+                const question = userInput.value.trim();
+                if (!question) return;
+                
+                addMessage(question, true);
+                userInput.value = '';
+                
+                // Simuler un délai de traitement
+                setTimeout(() => {
+                    const response = findBestResponse(question);
+                    addMessage(response);
+                }, 500 + Math.random() * 500);
+            }
+
+            // Événements
+            assistantBtn.addEventListener('click', toggleChat);
+            closeChat.addEventListener('click', toggleChat);
+
+            sendBtn.addEventListener('click', handleUserInput);
+
+            userInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    handleUserInput();
+                }
+            });
+
+            // Animation du bouton au chargement
+            setTimeout(() => {
+                assistantBtn.classList.add('pulse');
+                setTimeout(() => {
+                    assistantBtn.classList.remove('pulse');
+                }, 3000);
+            }, 5000);
+
+            // Initialiser l'état actif au chargement
+            updateActiveNavLink();
+
+            // Masquer le loader une fois la page chargée
+            window.addEventListener('load', function() {
+                document.querySelector('.loader').style.opacity = '0';
+                setTimeout(() => {
+                    document.querySelector('.loader').style.display = 'none';
+                }, 300);
+            });
+
+            // Gestion du changement de langue
+            document.querySelectorAll('.language-switcher button').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    // Ici vous pourriez implémenter la logique de changement de langue
+                    alert(`Fonctionnalité de traduction en ${lang} à implémenter`);
+                    
+                    // Mettre à jour l'état actif des boutons
+                    document.querySelectorAll('.language-switcher button').forEach(b => {
+                        b.classList.remove('secondary');
+                    });
+                    this.classList.add('secondary');
+                });
+            });
+        });
+         // Feedback widget
+    const emojiRatings = document.querySelectorAll('.emoji-ratings span');
+    
+    emojiRatings.forEach(emoji => {
+        emoji.addEventListener('click', function() {
+            const rating = this.getAttribute('data-rating');
+            let message;
+            
+            switch(rating) {
+                case '1': message = "Désolé que mon portfolio ne vous ait pas plu. Je vais m'améliorer !"; break;
+                case '2': message = "Merci pour votre feedback. Je prends note pour améliorer mon portfolio."; break;
+                case '3': message = "Merci ! Je suis contente que mon portfolio vous plaise."; break;
+                case '4': message = "Merci beaucoup ! Votre enthousiasme me motive énormément."; break;
+                default: message = "Merci pour votre feedback !";
+            }
+            
+            showToast(message);
+            
+            // Envoyer le feedback à un serveur (simulé ici)
+            console.log(`Feedback envoyé : ${rating}/4`);
+        });
+    });
+
+    // Fonction pour afficher les notifications toast
+    function showToast(message) {
+        const toast = document.createElement('div');
+        toast.className = 'toast-notification';
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        
+        setTimeout(function() {
+            toast.classList.add('show');
+        }, 100);
+        
+        setTimeout(function() {
+            toast.classList.remove('show');
+            setTimeout(() => {
+                toast.remove();
+            }, 300);
+        }, 3000);
+    }
+
+    // Ajouter le style pour les notifications toast
+    const toastStyle = document.createElement('style');
+    toastStyle.textContent = `
+        .toast-notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .toast-notification.show {
+            opacity: 1;
+        }
+    `;
+    document.head.appendChild(toastStyle);
+     // Scroll to Top Button
+    const scrollTopBtn = document.getElementById('scrollTop');
+    
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('active');
+            // Ajouter l'animation pulse quand le bouton est visible
+            setTimeout(() => {
+                scrollTopBtn.classList.add('pulse');
+            }, 1000);
+        } else {
+            scrollTopBtn.classList.remove('active');
+            scrollTopBtn.classList.remove('pulse');
+        }
+    });
+
+    scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        // Retirer temporairement le pulse lors du clic
+        this.classList.remove('pulse');
+        setTimeout(() => {
+            this.classList.add('pulse');
+        }, 2000);
+    });
+    </script>
+</body>
+</html>
